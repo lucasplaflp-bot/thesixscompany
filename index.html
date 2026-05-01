@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE SIX'S COMPANY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;700&family=Big+Shoulders+Display:wght@900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="sixs.css" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <img src="assets/logo.png" alt="The Six's Company" class="nav__logo-img" />
+    </div>
+    <ul class="nav__links">
+      <li><a href="#servicios">SERVICIOS</a></li>
+      <li><a href="#beats">BEATS</a></li>
+      <li><a href="#galeria">GALERÍA</a></li>
+      <li><a href="#musica">MÚSICA</a></li>
+      <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal-up">EST. THE SIX'S COMPANY</p>
+      <h1 class="hero__title">
+        <span class="reveal-up delay-1">MUSIC</span>
+        <span class="reveal-up delay-2 hero__title--outline">PRODUCTION</span>
+        <span class="reveal-up delay-3">&amp; BEATS</span>
+      </h1>
+      <p class="hero__sub reveal-up delay-4">Instrumentales · Mezcla · Mastering · Drumkits</p>
+      <a href="#servicios" class="btn reveal-up delay-5">VER SERVICIOS</a>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="statement">
+    <div class="statement__content">
+      <div class="statement__block scroll-reveal">
+        <span class="stmt-line stmt-line--fill">ACA SOLO</span>
+        <span class="stmt-line stmt-line--outline">FLOW'S</span>
+        <span class="stmt-line stmt-line--small">DE LA</span>
+        <span class="stmt-line stmt-line--split"><em>PUT*</em> ELITE</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="servicios" id="servicios">
+    <div class="section-header scroll-reveal">
+      <span class="section-tag">— SERVICIOS —</span>
+      <h2 class="section-title">LO QUE<br>HACEMOS</h2>
+    </div>
+    <div class="servicios__grid">
+
+      <div class="servicio-card scroll-reveal-left">
+        <div class="servicio-card__num">01</div>
+        <div class="servicio-card__img-wrap">
+          <img src="assets/mezcla.jpg" alt="Mezcla y Mastering" />
+        </div>
+        <div class="servicio-card__body">
+          <h3 class="servicio-card__title">MEZCLA &amp;<br>MASTERING</h3>
+          <p class="servicio-card__desc">Tu canción con el sonido que merece. Procesamiento profesional, claridad total, listo para plataformas.</p>
+          <div class="servicio-card__price">
+            <span class="price-label">DESDE</span>
+            <span class="price-amount" id="price-mezcla">$50.000 ARS</span>
+          </div>
+          <a href="#" class="btn btn--outline contratar-btn" data-servicio="Mezcla &amp; Mastering">CONTRATAR</a>
+        </div>
+      </div>
+
+      <div class="servicio-card scroll-reveal-right">
+        <div class="servicio-card__num">02</div>
+        <div class="servicio-card__img-wrap">
+          <img src="assets/beat.jpg" alt="Beat a Elección" />
+        </div>
+        <div class="servicio-card__body">
+          <h3 class="servicio-card__title">BEAT A<br>ELECCIÓN</h3>
+          <p class="servicio-card__desc">Elegís el beat, nosotros te lo entregamos listo. Plazo máximo de 4 días hábiles garantizado.</p>
+          <div class="servicio-card__price">
+            <span class="price-label">DESDE</span>
+            <span class="price-amount" id="price-beat">$40.000 ARS</span>
+          </div>
+          <a href="#" class="btn btn--outline contratar-btn" data-servicio="Beat a Elección">CONTRATAR</a>
+        </div>
+      </div>
+
+      <div class="servicio-card scroll-reveal-left">
+        <div class="servicio-card__num">03</div>
+        <div class="servicio-card__img-wrap">
+          <img src="assets/photo-07.jpg" alt="Drum Kits" style="object-position: center 30%;" />
+        </div>
+        <div class="servicio-card__body">
+          <h3 class="servicio-card__title">DRUM<br>KITS</h3>
+          <p class="servicio-card__desc">Samples exclusivos diseñados para el sonido trap, hip-hop y urbano. Producción que se escucha diferente.</p>
+          <div class="servicio-card__price">
+            <span class="price-label">DESDE</span>
+            <span class="price-amount" id="price-drumkit">$15.000 ARS</span>
+          </div>
+          <a href="#contacto" class="btn btn--outline contratar-btn" data-servicio="Drum Kits">CONTRATAR</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="marquee-wrap">
+    <div class="marquee">
+      <span>BEATS &nbsp;·&nbsp; MEZCLA &nbsp;·&nbsp; MASTERING &nbsp;·&nbsp; DRUMKITS &nbsp;·&nbsp; THE SIX'S COMPANY &nbsp;·&nbsp; BEATS &nbsp;·&nbsp; MEZCLA &nbsp;·&nbsp; MASTERING &nbsp;·&nbsp; DRUMKITS &nbsp;·&nbsp; THE SIX'S COMPANY &nbsp;·&nbsp;</span>
+      <span aria-hidden="true">BEATS &nbsp;·&nbsp; MEZCLA &nbsp;·&nbsp; MASTERING &nbsp;·&nbsp; DRUMKITS &nbsp;·&nbsp; THE SIX'S COMPANY &nbsp;·&nbsp; BEATS &nbsp;·&nbsp; MEZCLA &nbsp;·&nbsp; MASTERING &nbsp;·&nbsp; DRUMKITS &nbsp;·&nbsp; THE SIX'S COMPANY &nbsp;·&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- GALERÍA -->
+  <section class="gallery" id="galeria">
+    <div class="section-header scroll-reveal">
+      <span class="section-tag">— BEHIND THE SCENES —</span>
+      <h2 class="section-title">ASÍ<br>TRABAJAMOS</h2>
+    </div>
+    <div class="gallery__grid">
+
+      <div class="gallery__item gallery__item--tall scroll-reveal-left">
+        <img src="assets/photo-03.jpg" alt="666 The Six's Company" style="object-fit: contain; background: #080808;" />
+      </div>
+
+      <div class="gallery__item scroll-reveal">
+        <img src="assets/photo-10.jpg" alt="The Six's Company" style="object-position: center 20%;" />
+      </div>
+
+      <div class="gallery__item scroll-reveal-right">
+        <img src="assets/photo-09.jpg" alt="Producción" style="object-position: center top;" />
+      </div>
+
+      <div class="gallery__item gallery__item--wide scroll-reveal">
+        <img src="assets/photo-08.jpg" alt="Estudio" style="object-position: center 35%;" />
+      </div>
+
+    </div>
+  </section>
+
+  <section class="beats-section" id="beats">
+    <div class="beats-section__inner">
+      <div class="section-header scroll-reveal">
+        <span class="section-tag">— INSTRUMENTALES —</span>
+        <h2 class="section-title">ESCUCHÁ<br>LO QUE<br>HACEMOS</h2>
+      </div>
+      <div class="beats-grid">
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-01.mp3">
+          <div class="beat-row__num">001</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">D# MINOR</span>
+            <span class="beat-row__genre">140 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-02.mp3">
+          <div class="beat-row__num">002</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">G MINOR</span>
+            <span class="beat-row__genre">140 BPM · HIP-HOP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-03.mp3">
+          <div class="beat-row__num">003</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">B MINOR</span>
+            <span class="beat-row__genre">142 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-04.mp3">
+          <div class="beat-row__num">004</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">E MINOR</span>
+            <span class="beat-row__genre">144 BPM · HIP-HOP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-05.mp3">
+          <div class="beat-row__num">005</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">C MINOR</span>
+            <span class="beat-row__genre">145 BPM · DRILL-TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-06.mp3">
+          <div class="beat-row__num">006</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">C# MINOR</span>
+            <span class="beat-row__genre">145 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-07.mp3">
+          <div class="beat-row__num">007</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">D# MINOR</span>
+            <span class="beat-row__genre">145 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-08.mp3">
+          <div class="beat-row__num">008</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">G MINOR</span>
+            <span class="beat-row__genre">149 BPM · HIP-HOP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-09.mp3">
+          <div class="beat-row__num">009</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">F MINOR</span>
+            <span class="beat-row__genre">153 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-11.mp3">
+          <div class="beat-row__num">011</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">C# MINOR</span>
+            <span class="beat-row__genre">114 BPM · HIP-HOP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-12.mp3">
+          <div class="beat-row__num">012</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">E MINOR</span>
+            <span class="beat-row__genre">116 BPM · HIP-HOP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-13.mp3">
+          <div class="beat-row__num">013</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">F# MINOR</span>
+            <span class="beat-row__genre">118 BPM · HIP-HOP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-14.mp3">
+          <div class="beat-row__num">014</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">F# MINOR</span>
+            <span class="beat-row__genre">119 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-15.mp3">
+          <div class="beat-row__num">015</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">C# MINOR</span>
+            <span class="beat-row__genre">121 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-16.mp3">
+          <div class="beat-row__num">016</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">F MINOR</span>
+            <span class="beat-row__genre">125 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-17.mp3">
+          <div class="beat-row__num">017</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">A# MINOR</span>
+            <span class="beat-row__genre">140 BPM · SEXY DRILL</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-18.mp3">
+          <div class="beat-row__num">018</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">G MINOR RARO</span>
+            <span class="beat-row__genre">170 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-19.mp3">
+          <div class="beat-row__num">019</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">D# MINOR</span>
+            <span class="beat-row__genre">175 BPM · RAGE</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-20.mp3">
+          <div class="beat-row__num">020</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">F# MINOR</span>
+            <span class="beat-row__genre">180 BPM · RAGE</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-21.mp3">
+          <div class="beat-row__num">021</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">C# MAJOR</span>
+            <span class="beat-row__genre">181 BPM · RAGE</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-22.mp3">
+          <div class="beat-row__num">022</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">E MINOR</span>
+            <span class="beat-row__genre">186 BPM · RAGE</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-23.mp3">
+          <div class="beat-row__num">023</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">D MINOR</span>
+            <span class="beat-row__genre">92 BPM · OLD SCHOOL</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-24.mp3">
+          <div class="beat-row__num">024</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">G MINOR</span>
+            <span class="beat-row__genre">93 BPM · OLD SCHOOL</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-25.mp3">
+          <div class="beat-row__num">025</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">D MAJOR</span>
+            <span class="beat-row__genre">156 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-26.mp3">
+          <div class="beat-row__num">026</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">D MINOR</span>
+            <span class="beat-row__genre">143 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-27.mp3">
+          <div class="beat-row__num">027</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">D# MINOR</span>
+            <span class="beat-row__genre">155 BPM · TRAP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-28.mp3">
+          <div class="beat-row__num">028</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">D# MINOR</span>
+            <span class="beat-row__genre">96 BPM · HIP-HOP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+        <div class="beat-row scroll-reveal" data-src="beats/beat-29.mp3">
+          <div class="beat-row__num">029</div>
+          <button class="beat-play-btn" aria-label="Play">▶</button>
+          <div class="beat-row__info">
+            <span class="beat-row__name">G MINOR</span>
+            <span class="beat-row__genre">DETROIT · HIP-HOP</span>
+          </div>
+          <div class="beat-row__progress">
+            <div class="beat-row__bar"><div class="beat-row__bar-fill"></div></div>
+            <div class="beat-row__time"><span class="beat-current">0:00</span> / <span class="beat-duration">—</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="beats-sticker scroll-reveal">
+      <img src="assets/sticker.jpg" alt="Warning" class="sticker-img" />
+    </div>
+  </section>
+
+  <!-- SPOTIFY -->
+  <section class="spotify-section" id="musica">
+    <div class="spotify-section__inner">
+      <div class="section-header scroll-reveal">
+        <span class="section-tag">— EN SPOTIFY —</span>
+        <h2 class="section-title">ESCUCHÁ<br>MI MÚSICA</h2>
+      </div>
+      <div class="spotify-grid">
+
+        <div class="spotify-card scroll-reveal-left">
+          <div class="spotify-card__label">CANCIONES HECHAS</div>
+          <iframe
+            src="https://open.spotify.com/embed/playlist/2MFjMY2DEOQZBGsZTZ49bn?utm_source=generator&theme=0"
+            width="100%" height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </div>
+
+        <div class="spotify-card scroll-reveal">
+          <div class="spotify-card__label">CANCIONES MEZCLADAS</div>
+          <iframe
+            src="https://open.spotify.com/embed/playlist/2MFjMY2DEOQZBGsZTZ49bn?utm_source=generator&theme=0"
+            width="100%" height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </div>
+
+        <div class="spotify-card scroll-reveal-right">
+          <div class="spotify-card__label">ÁLBUM</div>
+          <iframe
+            src="https://open.spotify.com/embed/album/6r0rnRj6Q5Kw0u8eTkjkcb?utm_source=generator&theme=0"
+            width="100%" height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="contacto__bg">
+      <img src="assets/photo-11.jpg" alt="Contacto" class="contacto__bg-img" style="object-position: center top;" />
+    </div>
+    <div class="contacto__overlay"></div>
+    <div class="contacto__content scroll-reveal">
+      <span class="section-tag">— CONTACTO —</span>
+      <h2 class="contacto__title">¿LISTO PARA<br>EL PRÓXIMO<br>NIVEL?</h2>
+      <p class="contacto__sub">Escribinos y arrancamos hoy.</p>
+      <div class="contacto__links">
+        <a href="https://wa.me/542494018508" target="_blank" class="contacto__link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WHATSAPP PERSONAL
+        </a>
+        <a href="https://www.instagram.com/thesixscompany" target="_blank" class="contacto__link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @THESIXSCOMPANY
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <img src="assets/logo.png" alt="The Six's Company" class="footer__logo-img" />
+      <span class="footer__copy">© 2026 — TODOS LOS DERECHOS RESERVADOS</span>
+    </div>
+    <div class="footer__bottom">
+      <span>BEATS · MEZCLA · MASTERING · DRUMKITS</span>
+    </div>
+  </footer>
+
+  <!-- MODAL CONTRATAR -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal__close" id="modalClose">✕</button>
+      <div class="modal__header">
+        <span class="section-tag">— PEDIDO —</span>
+        <h2 class="modal__title">CONTRATAR</h2>
+        <p class="modal__servicio-label" id="modalServicio"></p>
+      </div>
+      <form class="modal__form" id="modalForm">
+        <div class="modal__field">
+          <label>TU NOMBRE</label>
+          <input type="text" id="mNombre" placeholder="Nombre o artista" required />
+        </div>
+        <div class="modal__field">
+          <label>WHATSAPP O EMAIL</label>
+          <input type="text" id="mContacto" placeholder="+54 9 ..." required />
+        </div>
+        <div class="modal__field">
+          <label>DETALLE DEL PEDIDO</label>
+          <textarea id="mDetalle" rows="3" placeholder="Contame lo que necesitás..."></textarea>
+        </div>
+        <div class="modal__note">
+          <p>📲 Al enviar te redirige a WhatsApp para coordinar el pago. Aceptamos transferencia y MercadoPago. Lucas recibe el pedido en su mail también.</p>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full-modal">ENVIAR PEDIDO →</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="sixs.js"></script>
+  <script>
+    fetch('/content.json').then(r => r.json()).then(d => {
+      const pm = document.getElementById('price-mezcla');
+      const pb = document.getElementById('price-beat');
+      const pd = document.getElementById('price-drumkit');
+      if (pm) pm.textContent = d.precio_mezcla;
+      if (pb) pb.textContent = d.precio_beat;
+      if (pd) pd.textContent = d.precio_drumkit;
+      document.querySelectorAll('a[href*="wa.me"]').forEach(a => {
+        a.href = 'https://wa.me/' + d.whatsapp;
+      });
+      window._waNumber = d.whatsapp;
+      const ig = document.querySelector('a[href*="instagram.com"]');
+      if (ig) ig.href = 'https://www.instagram.com/' + d.instagram;
+    }).catch(() => {});
+
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', user => {
+        if (!user) window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
+      });
+    }
+  </script>
+</body>
+</html>

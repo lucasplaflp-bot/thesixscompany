@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: "settings"
+    label: "Configuración del sitio"
+    files:
+      - name: "contenido"
+        label: "Precios y Contacto"
+        file: "content.json"
+        fields:
+          - label: "Precio — Mezcla y Mastering"
+            name: "precio_mezcla"
+            widget: "string"
+            hint: "Ejemplo: $50.000 ARS"
+          - label: "Precio — Beat a Elección"
+            name: "precio_beat"
+            widget: "string"
+            hint: "Ejemplo: $40.000 ARS"
+          - label: "Precio — Drum Kits"
+            name: "precio_drumkit"
+            widget: "string"
+            hint: "Ejemplo: $15.000 ARS"
+          - label: "Número WhatsApp (solo números, sin +)"
+            name: "whatsapp"
+            widget: "string"
+            hint: "Ejemplo: 542494018508"
+          - label: "Instagram (sin @)"
+            name: "instagram"
+            widget: "string"
+            hint: "Ejemplo: thesixscompany"

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construyendo Lazos | Psicología y Psiquiatría · CABA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="lazos.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__logo">Construyendo<em>Lazos</em></a>
+      <ul class="nav__links">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Cómo funciona</a></li>
+        <li><a href="#contacto" class="nav__cta">Consulta gratuita</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#nosotros" class="mobile-link">Nosotros</a></li>
+      <li><a href="#servicios" class="mobile-link">Servicios</a></li>
+      <li><a href="#proceso" class="mobile-link">Cómo funciona</a></li>
+      <li><a href="#contacto" class="mobile-link">Consulta gratuita</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__shapes">
+      <div class="hero__shape hero__shape--1"></div>
+      <div class="hero__shape hero__shape--2"></div>
+      <div class="hero__shape hero__shape--3"></div>
+    </div>
+    <div class="hero__content reveal">
+      <p class="hero__tag">Salud mental · Buenos Aires · CABA</p>
+      <h1 class="hero__title">Tu bienestar<br /><em>empieza aquí</em></h1>
+      <p class="hero__sub">Acompañamiento psicológico y psiquiátrico personalizado para ayudarte a construir una vida más plena, libre y significativa.</p>
+      <div class="hero__actions">
+        <a href="#contacto" class="btn btn--primary">Reservar consulta gratuita</a>
+        <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+      </div>
+    </div>
+    <div class="hero__cards reveal reveal--right">
+      <div class="hero__card">
+        <span class="hero__card-icon">🌱</span>
+        <p>Espacio seguro<br /><strong>sin juicios</strong></p>
+      </div>
+      <div class="hero__card">
+        <span class="hero__card-icon">💻</span>
+        <p>Presencial<br /><strong>y online</strong></p>
+      </div>
+      <div class="hero__card">
+        <span class="hero__card-icon">🎯</span>
+        <p>Atención<br /><strong>personalizada</strong></p>
+      </div>
+    </div>
+    <a href="#nosotros" class="hero__scroll">
+      <div class="hero__scroll-dot"></div>
+      <span>Explorá</span>
+    </a>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust">
+    <div class="container">
+      <div class="trust__grid">
+        <div class="trust__item reveal">
+          <span class="trust__num">+500</span>
+          <span class="trust__label">Pacientes acompañados</span>
+        </div>
+        <div class="trust__divider"></div>
+        <div class="trust__item reveal">
+          <span class="trust__num">10+</span>
+          <span class="trust__label">Años de experiencia</span>
+        </div>
+        <div class="trust__divider"></div>
+        <div class="trust__item reveal">
+          <span class="trust__num">Online</span>
+          <span class="trust__label">y presencial disponible</span>
+        </div>
+        <div class="trust__divider"></div>
+        <div class="trust__item reveal">
+          <span class="trust__num">100%</span>
+          <span class="trust__label">Confidencial</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOSOTROS -->
+  <section class="about" id="nosotros">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual reveal reveal--left">
+          <div class="about__img-wrap">
+            <div class="about__img-placeholder">
+              <span>📷</span>
+              <p>Colocá aquí una foto del equipo o del consultorio</p>
+            </div>
+          </div>
+          <div class="about__badge">
+            <span>💚</span>
+            <p>Espacio seguro y sin juicios</p>
+          </div>
+        </div>
+        <div class="about__text reveal reveal--right">
+          <p class="section-tag">Quiénes somos</p>
+          <h2 class="section-title">Construyendo lazos<br /><em>que sanan</em></h2>
+          <p class="about__desc">Somos un equipo de profesionales de la salud mental comprometidos con acompañarte en cada etapa de tu proceso. Creemos que cada persona merece un espacio seguro para explorar sus emociones y construir relaciones más saludables.</p>
+          <p class="about__desc">Nuestro enfoque integra psicología y psiquiatría para brindar una atención completa, humana y adaptada a tus necesidades particulares.</p>
+          <div class="about__pills">
+            <span class="pill pill--blue">Escucha activa</span>
+            <span class="pill pill--green">Sin juicios</span>
+            <span class="pill pill--yellow">Enfoque integral</span>
+            <span class="pill pill--blue">Confidencialidad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Lo que ofrecemos</p>
+        <h2 class="section-title">Nuestros servicios</h2>
+        <p class="section-sub">Atención profesional para cuidar tu salud mental en todas sus dimensiones</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card reveal">
+          <div class="service-card__top">
+            <div class="service-card__icon service-card__icon--blue">🧩</div>
+            <span class="service-card__num">01</span>
+          </div>
+          <h3>Psicoterapia Individual</h3>
+          <p>Espacio personal de trabajo terapéutico para abordar ansiedad, depresión, crisis vitales y autoconocimiento.</p>
+          <ul>
+            <li>Sesiones de 50 minutos</li>
+            <li>Presencial y online</li>
+            <li>Enfoque personalizado</li>
+          </ul>
+          <a href="#contacto" class="service-card__link">Consultar →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__top">
+            <div class="service-card__icon service-card__icon--green">👥</div>
+            <span class="service-card__num">02</span>
+          </div>
+          <h3>Psicoterapia de Pareja</h3>
+          <p>Mejoramos la comunicación, resolvemos conflictos y fortalecemos el vínculo afectivo en un espacio neutro y seguro.</p>
+          <ul>
+            <li>Sesiones conjuntas</li>
+            <li>Técnicas basadas en evidencia</li>
+            <li>Ambiente neutral</li>
+          </ul>
+          <a href="#contacto" class="service-card__link">Consultar →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__top">
+            <div class="service-card__icon service-card__icon--yellow">🌱</div>
+            <span class="service-card__num">03</span>
+          </div>
+          <h3>Psicoterapia Familiar</h3>
+          <p>Acompañamos a familias a mejorar dinámicas, resolver tensiones y construir lazos más sanos entre sus miembros.</p>
+          <ul>
+            <li>Sesiones grupales</li>
+            <li>Foco en comunicación</li>
+            <li>Intervención sistémica</li>
+          </ul>
+          <a href="#contacto" class="service-card__link">Consultar →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__top">
+            <div class="service-card__icon service-card__icon--blue">💊</div>
+            <span class="service-card__num">04</span>
+          </div>
+          <h3>Consulta Psiquiátrica</h3>
+          <p>Evaluación, diagnóstico y tratamiento farmacológico cuando es necesario, siempre de manera integral y humana.</p>
+          <ul>
+            <li>Diagnóstico clínico</li>
+            <li>Seguimiento continuo</li>
+            <li>Trabajo interdisciplinario</li>
+          </ul>
+          <a href="#contacto" class="service-card__link">Consultar →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__top">
+            <div class="service-card__icon service-card__icon--green">🧒</div>
+            <span class="service-card__num">05</span>
+          </div>
+          <h3>Psicología Infanto-Juvenil</h3>
+          <p>Atención especializada para niños, niñas y adolescentes en sus etapas del desarrollo emocional y cognitivo.</p>
+          <ul>
+            <li>Evaluación del desarrollo</li>
+            <li>Juego terapéutico</li>
+            <li>Orientación a padres</li>
+          </ul>
+          <a href="#contacto" class="service-card__link">Consultar →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__top">
+            <div class="service-card__icon service-card__icon--yellow">🎯</div>
+            <span class="service-card__num">06</span>
+          </div>
+          <h3>Orientación Vocacional</h3>
+          <p>Acompañamos a jóvenes y adultos en la exploración de su identidad, intereses y proyección profesional.</p>
+          <ul>
+            <li>Test psicométricos</li>
+            <li>Entrevistas orientadas</li>
+            <li>Plan de acción personal</li>
+          </ul>
+          <a href="#contacto" class="service-card__link">Consultar →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="process" id="proceso">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Simple y claro</p>
+        <h2 class="section-title">¿Cómo empezamos?</h2>
+        <p class="section-sub">Comenzar tu proceso terapéutico es más sencillo de lo que imaginás</p>
+      </div>
+      <div class="process__steps">
+        <div class="process__step reveal">
+          <div class="process__step-num">01</div>
+          <h3>Contacto inicial</h3>
+          <p>Escribinos por mail. Contanos brevemente lo que estás atravesando y te respondemos en menos de 24 horas.</p>
+        </div>
+        <div class="process__arrow reveal">→</div>
+        <div class="process__step reveal">
+          <div class="process__step-num">02</div>
+          <h3>Primera entrevista</h3>
+          <p>Una sesión inicial para conocerte, entender tu situación y definir juntos el abordaje más adecuado.</p>
+        </div>
+        <div class="process__arrow reveal">→</div>
+        <div class="process__step reveal">
+          <div class="process__step-num">03</div>
+          <h3>Plan terapéutico</h3>
+          <p>Diseñamos un plan personalizado con objetivos claros, frecuencia de sesiones y enfoque terapéutico.</p>
+        </div>
+        <div class="process__arrow reveal">→</div>
+        <div class="process__step reveal">
+          <div class="process__step-num">04</div>
+          <h3>Acompañamiento continuo</h3>
+          <p>Te acompañamos en cada etapa, con revisiones periódicas para asegurar tu avance y bienestar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band__inner reveal">
+        <div>
+          <h2>¿Listo para dar el primer paso?</h2>
+          <p>El cambio empieza con una sola decisión. Estamos aquí para acompañarte.</p>
+        </div>
+        <a href="#contacto" class="btn btn--primary btn--large">Reservá tu consulta gratuita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Hablemos</p>
+        <h2 class="section-title">Tomá contacto</h2>
+        <p class="section-sub">Primera consulta sin costo · Respondemos en menos de 24 horas</p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info reveal reveal--left">
+          <div class="contact__item">
+            <div class="contact__item-icon">📍</div>
+            <div>
+              <strong>Consultorio</strong>
+              <p>Av. Santa Fe 4945, CABA<br />Buenos Aires, Argentina</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon">📬</div>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:info@construyendolazosat.com.ar">info@construyendolazosat.com.ar</a></p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon">🕐</div>
+            <div>
+              <strong>Horarios</strong>
+              <p>Lunes a viernes: 9:00 – 20:00<br />Sábados: 9:00 – 13:00</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__item-icon">💻</div>
+            <div>
+              <strong>Modalidad</strong>
+              <p>Presencial y online disponible</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form reveal reveal--right" id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="tel">Teléfono (opcional)</label>
+              <input type="tel" id="tel" placeholder="+54 9 11 ..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio">
+              <option value="">Seleccioná un servicio</option>
+              <option>Psicoterapia Individual</option>
+              <option>Psicoterapia de Pareja</option>
+              <option>Psicoterapia Familiar</option>
+              <option>Consulta Psiquiátrica</option>
+              <option>Psicología Infanto-Juvenil</option>
+              <option>Orientación Vocacional</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Contanos brevemente qué te trae</label>
+            <textarea id="mensaje" rows="4" placeholder="Podés ser tan breve o detallado como quieras..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar consulta</button>
+          <p class="form__note">🔒 Tu información es confidencial y nunca se comparte con terceros.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#inicio" class="nav__logo">Construyendo<em>Lazos</em></a>
+          <p>Asistencia psicológica y<br />acompañamiento terapéutico</p>
+        </div>
+        <nav class="footer__nav">
+          <a href="#nosotros">Nosotros</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#proceso">Cómo funciona</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="footer__contact">
+          <p>Av. Santa Fe 4945, CABA</p>
+          <a href="mailto:info@construyendolazosat.com.ar">info@construyendolazosat.com.ar</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2024 Construyendo Lazos. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="lazos.js"></script>
+</body>
+</html>
